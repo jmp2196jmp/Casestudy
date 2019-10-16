@@ -1,4 +1,4 @@
-package ecart;
+package ecart;    
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -14,7 +14,7 @@ import javax.swing.JTextField;
 public class Product {
 
 	public void product() {
-JFrame f=new JFrame(" PRODUCT"); 
+       JFrame f=new JFrame(" PRODUCT"); 
 		
 		final JTextField us=new JTextField();  
 	    us.setBounds(150,55, 150,20);
@@ -48,7 +48,8 @@ JFrame f=new JFrame(" PRODUCT");
 	      b2.setBounds(150,200,95,20);
 	      
 	      
-	      
+	      JButton b1=new JButton("Logout");  
+		    b1.setBounds(150,250,95,20);
 	      
 	      ConnectionManager c=new ConnectionManager();
 	      b2.addActionListener(new ActionListener(){  
@@ -170,7 +171,7 @@ JFrame f=new JFrame(" PRODUCT");
 					
 					}
 	             });
-	      
+	    f.add(b1);  
 	    f.add(b2); 
 		f.add(q);
 		f.add(qa);

@@ -37,6 +37,10 @@ public class Admin {
 	    
 	    JButton b=new JButton("Submit");  
 	    b.setBounds(150,150,95,20);
+	    
+	   
+	    
+	    
           Product pr=new Product();
 		   b.addActionListener(new ActionListener(){  
 		    	public void actionPerformed(ActionEvent e){
