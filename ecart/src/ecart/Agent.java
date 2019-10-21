@@ -36,12 +36,10 @@ ms2.setBounds(120, 200, 300, 30);
   
 JButton b=new JButton("Submit");  
 b.setBounds(150,150,95,20);
- 
-
 
 b.addActionListener(new ActionListener(){  
 	public void actionPerformed(ActionEvent e){
-		Sell  sb=new Sell();	
+		
 	ConnectionManager c=new ConnectionManager();
 		 String mut=us.getText();
 		    String spt=ps.getText();
@@ -56,10 +54,7 @@ b.addActionListener(new ActionListener(){
 		  if(((rt.getString(1).equals(mut))&&(rt.getString(2).equals(spt))))
 		  {
 			  ms1.setText("Login Success");
-			  
-			 sb.agent();
-			  
-			  
+			 
 			  t++;
 			  break;
 		  }
