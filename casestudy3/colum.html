@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="'en'" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+   <title>Dashbord</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Open+Sans%7CQuicksand&display=swap');
+
+    .sidebar {
+      height: 100%;
+      width: 220px;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      padding-top: 16px;
+      padding-left:5px;
+    }
+    .fresh{
+      padding-left:8px;
+      width:50%;
+    }
+
+
+
+     h3{
+       color:white;
+       text-align:center;
+         font-family: 'Open Sans', sans-serif;
+     }
+
+    .sidebar a {
+      padding: 6px 8px 6px 16px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #818181;
+      display: block;
+    }
+
+    .sidebar a:hover {
+
+      background:rgba(0,255,128,0.2);
+    }
+    .but button{
+      position:absolute;
+      top:10px;
+      left:250px;
+      background-color: green;
+     cursor: pointer;
+     border-radius: 18px;
+     height: 30px;
+     width: 130px;
+     border:1px solid #e0e0d1;
+     color:white;
+    }
+    .but button:hover{
+      background-color:white;
+      color:black;
+    }
+
+    .ad button{
+      position:absolute;
+      top:10px;
+      left:400px;
+      background-color: green;
+     cursor: pointer;
+     border-radius: 18px;
+     height: 30px;
+     width: 130px;
+     border:1px solid #e0e0d1;
+     color:white;
+    }
+    .ad button:hover{
+      background-color:white;
+      color:black;
+    }
+    .sel1 select{
+      position:absolute;
+      top:10px;
+      left:900px;
+      padding-left:26px;
+      color:white;
+      background-color: green;
+     cursor: pointer;
+     border-radius: 9px;
+     height: 30px;
+     width: 130px;
+     border:1px solid #e0e0d1;
+    }
+    .sel1 select:hover{
+      background-color:white;
+      color:black;
+    }
+
+    .sel2 select{
+      padding-left:26px;
+      position:absolute;
+      top:10px;
+      left:1100px;
+      color:white;
+      background-color: green;
+     cursor: pointer;
+     border-radius: 9px;
+     height: 30px;
+     width: 130px;
+     border:1px solid #e0e0d1;
+    }
+    .sel2 select:hover{
+      background-color:white;
+      color:black;
+    }
+.tab{
+  border-top:1px solid #e0e0d1;
+  margin-top: 65px;
+  }
+
+.he{
+  margin-left:18em;
+  font-family:'Open Sans', sans-serif;
+}
+   .sg button{
+     position:absolute;
+     background-color:white;
+     left:300px;
+     top:130px;
+     border-radius: 4px;
+     height: 32px;
+     width: 300px;
+     border:1px solid #e0e0d1;
+   }
+
+   .dv button{
+     background-color:white;
+     position:absolute;
+     left:622px;
+     top:130px;
+     border-radius: 4px;
+     height: 32px;
+     width: 300px;
+     border:1px solid #e0e0d1;
+
+   }
+
+   .at button{
+     position:absolute;
+     left:952px;
+     top:130px;
+     background-color:white;
+     border-radius: 4px;
+     height: 32px;
+     width: 300px;
+     border:1px solid #e0e0d1;
+     }
+      #in{
+         position:absolute;
+         left:305px;
+         top:185px;
+         background-color:white;
+         border-radius: 4px;
+         height: 26px;
+         width: 150px;
+         padding-left:6px;
+         border:1px solid #e0e0d1;
+      }
+
+
+      .show
+            {
+              position:absolute;
+              top:170px;
+              left:1100px;
+
+            }
+    .b23 select
+              {
+              position:absolute;
+              top:184px;
+              left:1148px;
+              color: black;
+              cursor: pointer;
+              border-radius:5%;
+              border: 1px solid #e0e0d1;
+              height: 20px;
+              width:  40px;
+              }
+      .ent{
+          position:absolute;
+          top:170px;
+          left:1200px;
+           }
+
+
+           table
+                {
+                  position:absolute;
+                  top:240px;
+                  left:300px;
+                  border-collapse: collapse;
+                  width:950px;
+                  <!--border-radius:10%;-->
+                  }
+              tr{
+                 outline: thin solid #e0e0d1;
+                }
+            td{
+                border-collapse: collapse;
+                padding: 15px;
+                text-align: left;
+                }
+
+                th{
+                    border-collapse: collapse;
+                    padding: 15px;
+                    text-align: left;
+                    background-color:#e0e0d1;
+                    }
+
+
+    </style>
+    </head>
+    <body>
+
+    <div class="sidebar">
+      <div class="fresh">
+        <img src="fr.png" alt="fe">
+      </div>
+      <h3>DDU GKY</h3>
+      <br><br>
+      <a href="#home"><i class="fas fa-bullhorn	"></i> Anouncements</a>
+      <a href="#services"><i class="fas fa-users"></i> User Management</a>
+      <a href="#clients"><i class="fa fa-fw fa-tablet"></i> Traninig</a>
+      <a href="#contact"><i class="fa fa-fw fa-clone"></i> Assessment</a>
+      <a href="#contact"><i class="fa fa-fw fa-suitcase"></i> Jobs Board</a>
+      <a href="#contact"><i class="fas fa-calendar"></i> Calender</a>
+      <a href="#contact"><i class="fas fa-cog"></i> Settings</a>
+    </div>
+
+     <div class="but">
+       <button type="submit" name="button" value="submit">student</button>
+     </div>
+
+     <div class="ad">
+       <button type="submit" name="button" value="submit">admin</button>
+     </div>
+
+     <div class="sel1">
+       <select>
+        <option value="google">Export Users</option>
+        <option value="stk">smk</option>
+       <option value="smk">smk</option>
+       <option value="ftk">Ftk</option>
+      <option value="atk">Atk</option>
+      </select>
+     </div>
+
+     <div class="sel2">
+       <select>
+        <option value="google">Add Users</option>>
+        <option value="stk">smk</option>
+       <option value="smk">smk</option>
+       <option value="ftk">Ftk</option>
+      <option value="atk">Atk</option>
+      </select>
+     </div>
+
+
+     <div class="tab">
+       <div class="he">
+        <h2>Quick Actions</h2>
+       </div>
+
+
+       <div class="sg">
+         <button type="submit" name="button" value="submit"><i class="fas fa-users"></i> Student Group</button>
+       </div>
+
+      <div class="dv">
+        <button type="submit" name="button" value="submit"><i class="fas fa-file"></i> Document Verification</button>
+      </div>
+
+     <div class="at">
+       <button type="submit" name="button" value="submit"><i class="fas fa-tasks"></i> Attributes</button>
+     </div>
+
+     <div class="search">
+      <input type="text" id="in" placeholder="Search.." name="search2">
+     </div>
+
+     <div class="show">
+   <b><p>show</p></b>
+ </div>
+ <div class="b23">
+     <select>
+     <option value="10">10</option>
+     <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="13">13</option>
+   <option value="14">14</option>
+   </select>
+   </div>
+   <div class="ent">
+    <b> <p>entries</p></b>
+   </div>
+
+      <table >
+        <tr>
+            <th><input type="checkbox" name="" value=""></th>
+            <th scope="col">Student Name</th>
+            <th scope="col"><i class='fas fa-caret-up' style='font-size:20px;color:blue'></i></th>
+            <th scope="col">Student ID</th>
+            <th scope="col"> Batch</th>
+            <th scope="col">Department</th>
+            <th scope="col">Degree</th>
+
+        </tr>
+        <tr>
+          <td><input type="checkbox" name="" value=""></td>
+          <td>Joppen Philip</td>
+          <td><i class='fas fa-angle-right' style='font-size:20px;color:green'></i></td>
+          <td> PGK109</td>
+          <td>1</td>
+          <td>Computer Science Engineering(CSE)</td>
+          <td>B.Tech</td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="" value=""></td>
+          <td>Shinu Thomas</td>
+          <td><i class='fas fa-angle-right' style='font-size:20px;color:green'></i></td>
+          <td> PGK236</td>
+          <td>2</td>
+          <td>Electronic and Communications(</td>
+          <td>B.Tech</td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="" value=""></td>
+          <td>Shone Thomas</td>
+          <td><i class='fas fa-angle-right' style='font-size:20px;color:green'></i></td>
+          <td> PGK136</td>
+          <td>1</td>
+          <td>Electronic and Communications</td>
+          <td>B.Tech</td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="" value=""></td>
+          <td>Akhila C.M</td>
+          <td><i class='fas fa-angle-right' style='font-size:20px;color:green'></i></td>
+          <td> PGK131</td>
+          <td>1</td>
+          <td>Electronic and Communications</td>
+          <td>B.Tech</td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="" value=""></td>
+          <td>Shini Kurian</td>
+          <td><i class='fas fa-angle-right' style='font-size:20px;color:green'></i></td>
+          <td> PGK125</td>
+          <td>1</td>
+          <td>Computer Science Engineering(CSE)</td>
+          <td>B.Tech</td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="" value=""></td>
+          <td>Robin Jacob</td>
+          <td><i class='fas fa-angle-right' style='font-size:20px;color:green'></i></td>
+          <td> PGK121</td>
+          <td>1</td>
+          <td>Computer Science Engineering(CSE)</td>
+          <td>B.Tech</td>
+        </tr>
+
+        <tr>
+          <td><input type="checkbox" name="" value=""></td>
+          <td>Remya P.R</td>
+          <td><i class='fas fa-angle-right' style='font-size:20px;color:green'></i></td>
+          <td> PGK116</td>
+          <td>1</td>
+          <td>Computer Science Engineering(CSE)</td>
+          <td>B.Tech</td>
+        </tr>
+
+      </table>
+
+
+
+
+
+
+
+
+
+     </div>
+
+  </body>
+</html>
